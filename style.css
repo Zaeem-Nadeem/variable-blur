@@ -1,0 +1,30 @@
+:root {
+    --spacing: 10px;
+    --blur: 0px;
+    --color: #ffc600;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .controls {
+    display: flex;
+  }
+  .image {
+    width: 600px;
+    height: 400px;
+    justify-self: flex-start;
+    align-self: flex-center;
+    background-color: var(--color);
+    margin-top: 20px;
+    padding: var(--spacing);
+  }
+  .image img {
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    filter: blur(var(--blur));
+  }
